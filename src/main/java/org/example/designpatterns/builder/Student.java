@@ -26,6 +26,10 @@ public class Student {
         return name;
     }
 
+    public static Builder getBuilder(){
+        return new Builder();
+    }
+
     public void setName(String name) {
         this.name = name;
     }

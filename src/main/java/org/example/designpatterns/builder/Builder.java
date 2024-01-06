@@ -65,4 +65,8 @@ public class Builder {
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
     }
+
+    public Student builder(){
+        return new Student(this);
+    }
 }
