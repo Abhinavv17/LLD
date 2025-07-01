@@ -45,6 +45,7 @@ public class Main {
         requestDto.setVehicleType(VehicleType.SUV);
 
 
+        //TODO : Enter some random data in the maps and check if we are able to create a ticket object or not.
 
         Ticket ticket=null;
         IssueTicketResponseDto responseDto=ticketController.issueTicket(requestDto);
