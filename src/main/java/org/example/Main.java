@@ -23,14 +23,14 @@ public class Main {
         TicketRepository ticketRepository = new TicketRepository();
         ParkingLotRepository parkingLotRepository = new ParkingLotRepository();
 
-        Gate gate=new Gate();
-        gate.setId(123L);
-        gate.setGateNumber(1);
-        Operator operator=new Operator();
-        operator.setName("Stark guard");
-
-        gate.setCurrentOperator(operator);
-        gateRepository.addGate(gate);
+//        Gate gate=new Gate();
+//        gate.setId(123L);
+//        gate.setGateNumber(1);
+//        Operator operator=new Operator();
+//        operator.setName("Stark guard");
+//
+//        gate.setCurrentOperator(operator);
+//        gateRepository.addGate(gate);
 
         TicketService ticketService = new TicketService(
                 gateRepository, vehicleRepository, parkingLotRepository, ticketRepository);
